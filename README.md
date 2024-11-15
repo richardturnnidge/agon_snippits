@@ -11,6 +11,8 @@ This is my main build script which is called from the text editor. It does the f
 
 On the Agon, type `hexload vdp` to receive the transferred file, prior to calling the build script.
 
+NOTE: needs `srecord` to be installed to use `srec_cat`. This is normally installed with `brew`.
+
 
 ### sendfile.sh
 This is a simpler script which ony:
@@ -29,5 +31,5 @@ It does the following:
 - opens given serial port.
 - sends data in the HEX file line by line using `pyserial`.
 
-
+NOTE: Uses Python3 and needs `pyserial` to be installed for Python to use the serial port.
 
