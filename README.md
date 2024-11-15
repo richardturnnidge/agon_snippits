@@ -34,6 +34,8 @@ This is an early version which does not automatically deal with raw binary conve
 
 Use: _send.py filename.hex_
 
+The file is assumed to be in intel hex format.
+
 This gets called from either of the above 2 scripts.
 
 It does the following:
