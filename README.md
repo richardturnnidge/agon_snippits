@@ -11,7 +11,11 @@ This is my main build script which is called from the text editor. It does the f
 
 On the Agon, type `hexload vdp` to receive the transferred file, prior to calling the build script.
 
+Use: ** build.sh filename.asm **
+
 NOTE: needs `srecord` to be installed to use `srec_cat`. This is normally installed with `brew`.
+
+Needs to be in the same directory as the working file.
 
 
 ### sendfile.sh
@@ -21,9 +25,14 @@ This is a simpler script which ony:
 
 On the Agon, type `hexload vdp` to receive the transferred file, prior to calling the build script.
 
+Use: ** sendfile.sh filename.ext **
+
+Needs to be in the same directory as the working file.
 
 ### send.py
 This is an early version which does not automatically deal with raw binary conversion to HEX.
+
+Use: ** send.py filename.hex **
 
 This gets called from either of the above 2 scripts.
 
@@ -33,3 +42,4 @@ It does the following:
 
 NOTE: Uses Python3 and needs `pyserial` to be installed for Python to use the serial port.
 
+Needs to be in the same directory as the working file.
